@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://j4hpy4ca7gf6"]
+
+[ext_resource type="FontFile" uid="uid://cpb8m3qtfujhv" path="res://material x texture/fonts/Lemon Days.ttf" id="1_7n3s7"]
+[ext_resource type="Script" path="res://scene/timer_uitscn.gd" id="1_ijyip"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ijyip")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 793.0
+offset_right = 961.0
+offset_bottom = 65.0
+theme_override_fonts/font = ExtResource("1_7n3s7")
+theme_override_font_sizes/font_size = 50
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

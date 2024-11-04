@@ -1,0 +1,265 @@
+[gd_scene load_steps=13 format=3 uid="uid://chnmu0qrlpgfd"]
+
+[ext_resource type="PackedScene" uid="uid://btbjkdsp6m3ob" path="res://scene/blowy.tscn" id="2"]
+[ext_resource type="MeshLibrary" uid="uid://batfkedixiiwc" path="res://lets-roll-assets/platform.meshlib" id="2_xhby5"]
+[ext_resource type="FontFile" uid="uid://cpb8m3qtfujhv" path="res://material x texture/fonts/Lemon Days.ttf" id="3"]
+[ext_resource type="AudioStream" uid="uid://dijmqo0rndip8" path="res://material x texture/no-copyright-music-swipesy-cakewalk-cute-background-music.mp3" id="4"]
+[ext_resource type="AudioStream" uid="uid://cw7lohqsbqafn" path="res://material x texture/sound/click.wav" id="5"]
+[ext_resource type="Script" path="res://script/MENU.gd" id="6"]
+
+[sub_resource type="FontFile" id="7"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+
+[sub_resource type="FontFile" id="8"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
+[sub_resource type="FontFile" id="10"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oyrfo"]
+sky_top_color = Color(0.49623, 0.13016, 0.632124, 1)
+sky_horizon_color = Color(0.703823, 0.286197, 0.867389, 1)
+ground_bottom_color = Color(0.582001, 0.173932, 0.732442, 1)
+ground_horizon_color = Color(0.498039, 0.129412, 0.631373, 1)
+sun_curve = 0.0891906
+
+[sub_resource type="Sky" id="Sky_12rm1"]
+sky_material = SubResource("ProceduralSkyMaterial_oyrfo")
+radiance_size = 0
+
+[sub_resource type="Environment" id="Environment_h3ed6"]
+background_mode = 2
+background_color = Color(0.436199, 0.183455, 0.59657, 1)
+background_energy_multiplier = 0.75
+sky = SubResource("Sky_12rm1")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_exposure = 0.9
+tonemap_white = 1.1
+ssao_enabled = true
+ssao_intensity = 1.64
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.25
+glow_enabled = true
+glow_intensity = 8.0
+glow_strength = 0.77
+glow_bloom = 0.21
+glow_hdr_threshold = 1.08
+fog_depth_curve = 0.129408
+fog_depth_begin = 526.8
+fog_depth_end = 2356.4
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_sky_affect = 0.79
+adjustment_brightness = 0.9
+adjustment_contrast = 1.84
+
+[node name="MENU" type="Node3D"]
+script = ExtResource("6")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_xhby5")
+cell_size = Vector3(4, 4, 4)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(-65527, 7, 1048576, -65527, 5, 1048576, -65527, 3, 1048576, -65527, 1, 1048576, -65527, 65535, 1048576, -65527, 65533, 1048576, -65527, 65531, 1048576, -65527, 65529, 1048576, -65527, 65527, 1048576, -65527, 65525, 1048576, -65529, 65525, 1048576, -65531, 65525, 1048576, -65533, 65525, 1048576, -65535, 65525, 1048576, -1, 65525, 1048576, -3, 65525, 1048576, -5, 65525, 1048576, -7, 65525, 1048576, -7, 65527, 1048576, -7, 65529, 1048576, -7, 65531, 1048576, -7, 65533, 1048576, -7, 65535, 1048576, -7, 1, 1048576, -7, 3, 1048576, -7, 5, 1048576, -7, 7, 1048576, -65527, 9, 1048576, -65529, 9, 1048576, -65531, 9, 1048576, -65533, 9, 1048576, -65535, 9, 1048576, -1, 9, 1048576, -3, 9, 1048576, -5, 9, 1048576, -7, 9, 1048576, -5, 7, 1048576, -3, 7, 1048576, -1, 7, 1048576, -65535, 7, 1048576, -65533, 7, 1048576, -65531, 7, 1048576, -65529, 7, 1048576, -65529, 65527, 1048576, -65531, 65527, 1048576, -65533, 65527, 1048576, -65535, 65527, 1048576, -1, 65527, 1048576, -3, 65527, 1048576, -5, 65527, 1048576, -65529, 0, 1048576, -65531, 0, 1048576, -65533, 0, 1048576, -65535, 0, 1048576, -1, 0, 1048576, -3, 0, 1048576, -5, 0, 1048576, -5, 65534, 1048576, -3, 65534, 1048576, -1, 65534, 1048576, -65535, 65534, 1048576, -65533, 65534, 1048576, -65531, 65534, 1048576, -65529, 65534, 1048576, -65535, 65532, 1048576, -65535, 65530, 1048576, -65535, 2, 1048576, -65535, 4, 1048576, 65532, 65531, 1048576, 65534, 65531, 1048576, 65532, 3, 1048576, 65534, 3, 1048576, 4, 3, 1048576, 6, 3, 1048576, 4, 65531, 1048576, 6, 65531, 1048576)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="BALLS" type="Node" parent="."]
+
+[node name="Spatial178" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.656, 25.6805, 0.103353)
+
+[node name="Spatial179" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.656, 26.6905, 8.65716)
+
+[node name="Spatial180" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, 3.62413)
+
+[node name="Spatial181" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 3.58882, 26.6905, 8.65716)
+
+[node name="Spatial182" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -14.2417, 26.6905, 8.65716)
+
+[node name="Spatial183" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, -25.7464)
+
+[node name="Spatial184" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 21.1427, 26.6905, -1.80291)
+
+[node name="Spatial185" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 7.78225, 27.3868, -3.50066)
+
+[node name="Spatial186" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -1.91335, 27.3868, 14.5544)
+
+[node name="Spatial187" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.50874, 25.2173, -3.8196)
+
+[node name="Spatial188" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 4.52077, 27.9043, 18.9376)
+
+[node name="Spatial189" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 4.37878, 27.9043, 18.9376)
+
+[node name="Spatial190" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 6.3277, 28.3216, -15.3099)
+
+[node name="Spatial191" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 21.4122, 28.3216, 15.306)
+
+[node name="Spatial192" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -15.2283, 28.3216, 22.4716)
+
+[node name="Spatial193" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -8.50646, 28.3216, 22.4716)
+
+[node name="Spatial194" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 15.9057, 28.3216, 22.4716)
+
+[node name="Spatial195" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 15.9057, 28.3216, 16.7232)
+
+[node name="Spatial196" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 6.93167, 28.3216, 3.76418)
+
+[node name="Spatial197" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -9.64893, 28.3216, -8.13434)
+
+[node name="Spatial198" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -9.64893, 28.3216, 4.96014)
+
+[node name="Spatial199" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -9.64893, 28.3216, -1.66262)
+
+[node name="Spatial200" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 3.62503, 28.3216, -1.66262)
+
+[node name="Spatial201" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 3.62503, 28.3216, -9.39291)
+
+[node name="Spatial202" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.22842, 28.3216, -9.39291)
+
+[node name="Spatial203" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.22842, 28.3216, -16.3658)
+
+[node name="Spatial204" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 21.8743, 28.3216, -16.3658)
+
+[node name="Spatial205" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.0233, 28.3216, -16.3658)
+
+[node name="Spatial206" parent="BALLS" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.0233, 28.3216, -8.37295)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.0871559, 0.257834, -0.96225, 0, 0.965926, 0.258819, 0.996195, 0.0225576, -0.0841861, -29.7328, 16.0254, -1.3567)
+current = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 173.0
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = SubResource("7")
+theme_override_font_sizes/font_size = 100
+text = "TOON ROLL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -45.0
+offset_right = 78.0
+offset_bottom = 45.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("8")
+theme_override_font_sizes/font_size = 50
+text = "PLAY"
+flat = true
+
+[node name="click" type="AudioStreamPlayer" parent="CanvasLayer/Button"]
+stream = ExtResource("5")
+
+[node name="info" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = 66.0
+offset_right = 74.0
+offset_bottom = 156.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("10")
+theme_override_font_sizes/font_size = 50
+text = "INFO"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4")
+autoplay = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h3ed6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-2.8767e-08, -0.830557, -0.556934, -3.29112e-08, -0.556934, 0.830557, -1, 4.2222e-08, -1.13133e-08, -35.0645, 45.8656, -9.73745)
+light_color = Color(1, 0.920675, 0.77526, 1)
+light_energy = 0.8
+light_indirect_energy = 2.0
+shadow_enabled = true
+
+[connection signal="button_down" from="CanvasLayer/Button" to="." method="_on_Button_button_down"]
+[connection signal="button_down" from="CanvasLayer/info" to="." method="_on_info_button_down"]

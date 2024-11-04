@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ball-rolling.mp3-70a0e2d805343599d95c85f1532c0c5f.mp3str"
+
+[deps]
+
+source_file="res://lets-roll-assets/assets/ball-rolling.mp3"
+dest_files=[ "res://.import/ball-rolling.mp3-70a0e2d805343599d95c85f1532c0c5f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

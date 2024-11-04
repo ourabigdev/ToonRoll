@@ -1,0 +1,154 @@
+[gd_scene load_steps=16 format=3 uid="uid://bmwxj6eg4c08m"]
+
+[ext_resource type="MeshLibrary" uid="uid://batfkedixiiwc" path="res://lets-roll-assets/platform.meshlib" id="1_oc7yr"]
+[ext_resource type="PackedScene" uid="uid://cfvha8rl01qsb" path="res://scene/ball.tscn" id="2"]
+[ext_resource type="Script" path="res://script/Area.gd" id="3"]
+[ext_resource type="Script" path="res://script/victoryzone.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://bbr4gb2oy6mci" path="res://material x texture/4705847.png" id="5"]
+[ext_resource type="PackedScene" uid="uid://btbjkdsp6m3ob" path="res://scene/blowy.tscn" id="6_asfvi"]
+[ext_resource type="PackedScene" uid="uid://j4hpy4ca7gf6" path="res://scene/TimerUitscn.tscn" id="7_mdev3"]
+
+[sub_resource type="BoxShape3D" id="7"]
+
+[sub_resource type="BoxShape3D" id="8"]
+size = Vector3(7.73477, 2, 7.18812)
+
+[sub_resource type="Animation" id="9"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="10"]
+resource_name = "fleche"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(100, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7y1wh"]
+_data = {
+"RESET": SubResource("9"),
+"fleche": SubResource("10")
+}
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_83a7g"]
+sky_top_color = Color(0.49623, 0.13016, 0.632124, 1)
+sky_horizon_color = Color(0.703823, 0.286197, 0.867389, 1)
+ground_bottom_color = Color(0.582001, 0.173932, 0.732442, 1)
+ground_horizon_color = Color(0.498039, 0.129412, 0.631373, 1)
+sun_curve = 0.0891906
+
+[sub_resource type="Sky" id="Sky_srh24"]
+sky_material = SubResource("ProceduralSkyMaterial_83a7g")
+radiance_size = 0
+
+[sub_resource type="Environment" id="Environment_p5icd"]
+background_mode = 2
+background_color = Color(0.436199, 0.183455, 0.59657, 1)
+background_energy_multiplier = 0.75
+sky = SubResource("Sky_srh24")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_exposure = 0.9
+tonemap_white = 1.1
+ssao_enabled = true
+ssao_intensity = 1.64
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.25
+glow_enabled = true
+glow_intensity = 8.0
+glow_strength = 0.77
+glow_bloom = 0.21
+glow_hdr_threshold = 1.08
+fog_depth_curve = 0.129408
+fog_depth_begin = 526.8
+fog_depth_end = 2356.4
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_sky_affect = 0.79
+adjustment_brightness = 0.9
+adjustment_contrast = 1.84
+
+[node name="level00" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_oc7yr")
+cell_size = Vector3(4, 4, 4)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(-65531, 65531, 1, -65531, 65533, 655364, 65530, 2, 2, 65528, 2, 2, 65530, 65534, 655362, 65528, 65534, 655362, 65526, 65534, 655362, 65526, 2, 2, 65530, 0, 0, 65528, 0, 0, 65526, 0, 0, 65534, 1, 0, 0, 1, 1048578, 0, 65535, 1048576, 5, 65535, 1048578, 2, 65535, 3)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="ball" parent="." instance=ExtResource("2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -31.6397, 4.89495, 0)
+
+[node name="defzone" type="Area3D" parent="."]
+script = ExtResource("3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="defzone"]
+transform = Transform3D(150, 0, 0, 0, 1, 0, 0, 0, 150, 0, -25, 0)
+shape = SubResource("7")
+
+[node name="victoryzone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3495, -0.347815, -20.162)
+script = ExtResource("4")
+Next_level = "res://scene/level01.tscn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="victoryzone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.218582, -1.98875, -0.118412)
+shape = SubResource("8")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-0.0215706, 0.999767, 0, -0.999767, -0.0215706, 0, 0, 0, 1, 20.7762, 4.85021, -20.0734)
+texture = ExtResource("5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3D"]
+libraries = {
+"": SubResource("AnimationLibrary_7y1wh")
+}
+autoplay = "fleche"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_p5icd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-2.8767e-08, -0.830557, -0.556934, -3.29112e-08, -0.556934, 0.830557, -1, 4.2222e-08, -1.13133e-08, -35.0645, 45.8656, -9.73745)
+light_color = Color(1, 0.920675, 0.77526, 1)
+light_energy = 0.8
+light_indirect_energy = 2.0
+shadow_enabled = true
+
+[node name="blowys" type="Node" parent="."]
+
+[node name="Node3D" parent="blowys" instance=ExtResource("6_asfvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.14125, -3.22097)
+
+[node name="Control" parent="." instance=ExtResource("7_mdev3")]
+
+[connection signal="body_entered" from="defzone" to="defzone" method="_on_Area_body_entered"]
+[connection signal="body_entered" from="victoryzone" to="victoryzone" method="_on_victoryzone_body_entered"]

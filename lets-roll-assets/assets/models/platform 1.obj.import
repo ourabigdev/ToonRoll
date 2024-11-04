@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq0p4ihn8w3l4"
+path="res://.godot/imported/platform 1.obj-b4644b5189ea3655cac48fe538635e98.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform 1.obj-b4644b5189ea3655cac48fe538635e98.mesh"]
+
+source_file="res://lets-roll-assets/assets/models/platform 1.obj"
+dest_files=["res://.godot/imported/platform 1.obj-b4644b5189ea3655cac48fe538635e98.mesh", "res://.godot/imported/platform 1.obj-b4644b5189ea3655cac48fe538635e98.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

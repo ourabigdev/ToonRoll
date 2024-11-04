@@ -1,0 +1,83 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730714876
+camera_control.gd::GDScript::-1::1730675424::0::1::::<>Marker3D<>::
+default_env.tres::Environment::1613914748550053140::1730714097::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1667829303::0::1::::<><>::
+icon.png::CompressedTexture2D::3340952450000546892::1659724046::1730675459::1::::<><>::
+README.md::TextFile::-1::1659799164::0::1::::<><>::
+TexturesCom_SoilCracked0079_1_seamless_N.png::CompressedTexture2D::4863697809146056263::1659799164::1730675459::1::::<><>::
+TexturesCom_SoilCracked0079_1_seamless_S.jpg::CompressedTexture2D::1809840321083385494::1659799164::1730675459::1::::<><>::
+::res://addons/::1730677581
+::res://addons/godot-jolt/::1730677581
+godot-jolt.gdextension::GDExtension::-1::1730677581::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1730677581::0::1::::<><>::
+THIRDPARTY.txt::TextFile::-1::1730677581::0::1::::<><>::
+::res://addons/godot-jolt/android/::1730677581
+::res://addons/godot-jolt/ios/::1730677581
+::res://addons/godot-jolt/ios/godot-jolt_ios.framework/::1730677581
+::res://addons/godot-jolt/ios/godot-jolt_ios_editor.framework/::1730677581
+::res://addons/godot-jolt/linux/::1730677581
+::res://addons/godot-jolt/macos/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/_CodeSignature/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos.framework/Resources/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/_CodeSignature/::1730677581
+::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/Resources/::1730677581
+::res://addons/godot-jolt/windows/::1730712746
+::res://lets-roll-assets/::1730713202
+platform.meshlib::MeshLibrary::2425965519045475454::1730713202::0::1::::<><>::uid://ba8jwq7oj7rik::::res://lets-roll-assets/assets/models/platform 1.png<>uid://bpe4osoa1fl6s::::res://lets-roll-assets/assets/models/winning.png<>uid://bdpd5s6i5bsad::::res://lets-roll-assets/assets/models/platform2.png
+::res://lets-roll-assets/assets/::1730675459
+1.png::CompressedTexture2D::884335518586801182::1659797966::1730675459::1::::<><>::
+::res://lets-roll-assets/assets/models/::1730714876
+blocks.gltf::PackedScene::6321383756009270624::1659796105::1730675460::1::::<><>::uid://cpgtgbja5rvge::::res://lets-roll-assets/assets/models/blocks_lowpoly-texture.png
+blocks_lowpoly-texture.png::CompressedTexture2D::5839224692574411340::1730675459::1730675461::1::::<><>::
+LowpolyMaterial.material::StandardMaterial3D::-1::1659958324::0::1::::<><>::
+pixar-ball.obj::Mesh::4112361269042797960::1659796105::1730675459::1::::<><>::
+platform2.obj::Mesh::3129922953928339797::1730712720::1730712752::1::::<><>::uid://bdpd5s6i5bsad::::res://lets-roll-assets/assets/models/platform2.png
+platform2.png::CompressedTexture2D::2628189599426414195::1730712720::1730712775::1::::<><>::
+platform 1.obj::Mesh::3562014600303941667::1730678000::1730678002::1::::<><>::uid://ba8jwq7oj7rik::::res://lets-roll-assets/assets/models/platform 1.png
+platform 1.png::CompressedTexture2D::2455131780434623790::1730678000::1730678002::1::::<><>::
+StairPlatform.obj::Mesh::7629591963592698448::1730714840::1730714876::1::::<><>::
+StairPlatform.png::CompressedTexture2D::520237339693198206::1730714840::1730714876::1::::<><>::
+winning.obj::Mesh::3987532169639011144::1730678774::1730678787::1::::<><>::uid://bpe4osoa1fl6s::::res://lets-roll-assets/assets/models/winning.png
+winning.png::CompressedTexture2D::3449297610267241380::1730678774::1730678787::1::::<><>::
+::res://lets-roll-assets/assets/textures/::1730676121
+lowpoly-texture.png::CompressedTexture2D::2602070911914509973::1659796105::1730676121::1::::<><>::
+pixar-ball.png::CompressedTexture2D::5118381268303908089::1659796105::1730675459::1::::<><>::
+::res://material x texture/::1730675546
+4705847.png::CompressedTexture2D::2493475551606276212::1660077071::1730675473::1::::<><>::
+ball.png::CompressedTexture2D::258602026212331172::1659809194::1730675546::1::::<><>::
+create by ourabig studio.png::CompressedTexture2D::2629923575817641262::1667309487::1730675459::1::::<><>::
+JUMP WITH SPACE BUTTON AND CONTROLL WITH WASD (1).png::CompressedTexture2D::2449082047960593473::1660078773::1730675459::1::::<><>::
+MADE BY.png::CompressedTexture2D::2708119308651720335::1660232433::1730675459::1::::<><>::
+no-copyright-music-swipesy-cakewalk-cute-background-music.mp3::AudioStreamMP3::7740110151322690823::1659818903::1730675459::1::::<><>::
+Untitled design.png::CompressedTexture2D::1884104073138565928::1667309611::1730675459::1::::<><>::
+::res://material x texture/fonts/::1730675459
+Lemon Days.otf::FontFile::4146166860306784254::1660078836::1730675459::1::::<><>::
+Lemon Days.ttf::FontFile::5829764986240325879::1660078836::1730675459::1::::<><>::
+::res://material x texture/sound/::1730675459
+click.wav::AudioStreamWAV::6383749296788051719::1660079201::1730675459::1::::<><>::
+::res://scene/::1730714097
+ball.tscn::PackedScene::5167564297427453477::1730714097::0::1::::<><>::uid://dxjexb21y86c::::res://material x texture/ball.png<>res://script/shaders/ball.gdshader<>res://script/ball.gd<>uid://dijmqo0rndip8::::res://material x texture/no-copyright-music-swipesy-cakewalk-cute-background-music.mp3
+blocks.tscn::PackedScene::6996037735568372083::1730714097::0::1::::<><>::uid://cwcejcscnpme7::::res://lets-roll-assets/assets/models/blocks.gltf<>uid://cpgtgbja5rvge::::res://lets-roll-assets/assets/models/blocks_lowpoly-texture.png
+blowy.tscn::PackedScene::3722637587543715453::1730677687::0::1::::<><>::uid://dxjexb21y86c::::res://material x texture/ball.png<>res://script/shaders/ball.gdshader
+create by ourabig studio.png::CompressedTexture2D::3443912684770684704::1667309460::1730675459::1::::<><>::
+info.tscn::PackedScene::1972148897908060005::1730714097::0::1::::<><>::uid://bdp7psmf26mbu::::res://material x texture/create by ourabig studio.png<>uid://cpb8m3qtfujhv::::res://material x texture/fonts/Lemon Days.ttf<>res://script/info.gd<>uid://cw7lohqsbqafn::::res://material x texture/sound/click.wav
+level00.tscn::PackedScene::3275517315632124530::1730714097::0::1::::<><>::uid://batfkedixiiwc::::res://lets-roll-assets/platform.meshlib<>uid://cfvha8rl01qsb::::res://scene/ball.tscn<>res://script/Area.gd<>res://script/victoryzone.gd<>uid://bbr4gb2oy6mci::::res://material x texture/4705847.png
+MENU.tscn::PackedScene::5291765842034824205::1730714097::0::1::::<><>::uid://btbjkdsp6m3ob::::res://scene/blowy.tscn<>uid://batfkedixiiwc::::res://lets-roll-assets/platform.meshlib<>uid://cpb8m3qtfujhv::::res://material x texture/fonts/Lemon Days.ttf<>uid://dijmqo0rndip8::::res://material x texture/no-copyright-music-swipesy-cakewalk-cute-background-music.mp3<>uid://cw7lohqsbqafn::::res://material x texture/sound/click.wav<>res://script/MENU.gd
+Platforms.tscn::PackedScene::5370049372193781163::1730714097::0::1::::<><>::uid://bq0p4ihn8w3l4::::res://lets-roll-assets/assets/models/platform 1.obj<>uid://bw2ucprv5hhfk::::res://lets-roll-assets/assets/models/winning.obj<>uid://bdpd5s6i5bsad::::res://lets-roll-assets/assets/models/platform2.png
+scenetransition.tscn::PackedScene::-1::1730675424::0::1::::<><>::res://script/scenetransition.gd
+tutorial.gd::GDScript::-1::1730675424::0::1::::<>Node2D<>::
+tutorial.tscn::PackedScene::4786300117007636747::1730714097::0::1::::<><>::uid://ba5ma2ghlmbvd::::res://material x texture/JUMP WITH SPACE BUTTON AND CONTROLL WITH WASD (1).png<>uid://cpb8m3qtfujhv::::res://material x texture/fonts/Lemon Days.ttf<>res://scene/tutorial.gd<>uid://cw7lohqsbqafn::::res://material x texture/sound/click.wav
+you win.gd::GDScript::-1::1730675424::0::1::::<>Node2D<>::
+you win.tscn::PackedScene::-1::1730675424::0::1::::<><>::res://material x texture/fonts/Lemon Days.ttf<>res://block.meshlib<>res://scene/blowy.tscn<>res://material x texture/no-copyright-music-swipesy-cakewalk-cute-background-music.mp3<>res://scene/you win.gd
+::res://script/::1730713541
+Area.gd::GDScript::-1::1730675424::0::1::::<>Area3D<>::
+ball.gd::GDScript::-1::1730713541::0::1::::<>RigidBody3D<>::
+info.gd::GDScript::-1::1730675424::0::1::::<>Node2D<>::
+MENU.gd::GDScript::-1::1730675424::0::1::::<>Node3D<>::
+scenetransition.gd::GDScript::-1::1730675424::0::1::::<>CanvasLayer<>::
+victoryzone.gd::GDScript::-1::1730675424::0::1::::<>Area3D<>::
+::res://script/shaders/::1730714097
+ball.gdshader::Shader::-1::1730714097::0::1::::<><>::

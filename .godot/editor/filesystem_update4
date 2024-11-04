@@ -1,0 +1,14 @@
+res://default_env.tres
+res://scene/Platforms.tscn
+res://script/shaders/ball.gdshader
+res://lets-roll-assets/platform.meshlib
+res://scene/level00.tscn
+res://scene/MENU.tscn
+res://scene/info.tscn
+res://scene/tutorial.tscn
+res://scene/blocks.tscn
+res://scene/ball.tscn
+res://script/ball.gd
+res://scene/blowy.tscn
+res://scene/TimerUitscn.tscn
+res://scene/timer_uitscn.gd

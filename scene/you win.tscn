@@ -1,0 +1,188 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://material x texture/fonts/Lemon Days.ttf" type="FontFile" id=1]
+[ext_resource path="res://block.meshlib" type="MeshLibrary" id=2]
+[ext_resource path="res://scene/blowy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://material x texture/no-copyright-music-swipesy-cakewalk-cute-background-music.mp3" type="AudioStream" id=4]
+[ext_resource path="res://scene/you win.gd" type="Script" id=5]
+
+[sub_resource type="FontFile" id=1]
+size = 128
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="FontFile" id=7]
+size = 64
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Sky" id=5]
+radiance_size = 0
+sky_energy = 0.0
+ground_bottom_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="Environment" id=6]
+background_mode = 1
+background_sky = SubResource( 5 )
+background_color = Color( 0.34902, 0.137255, 0.482353, 1 )
+ambient_light_color = Color( 0.835294, 0.356863, 0.968627, 1 )
+fog_enabled = true
+fog_depth_begin = 526.8
+fog_depth_end = 2356.4
+fog_depth_curve = 0.129408
+fog_transmit_curve = 0.148651
+fog_height_min = 100.0
+fog_height_curve = 0.203063
+tonemap_mode = 2
+ssao_enabled = true
+ssao_intensity = 1.81
+ssao_color = Color( 0.0823529, 0.0862745, 0.00392157, 1 )
+glow_enabled = true
+glow_intensity = 8.0
+glow_strength = 0.79
+glow_bloom = 1.0
+glow_high_quality = true
+adjustment_enabled = true
+adjustment_brightness = 0.85
+adjustment_contrast = 1.5
+adjustment_saturation = 1.2
+
+[node name="you win" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchor_right = 1.0
+offset_bottom = 14.0
+theme_override_fonts/font = SubResource( 1 )
+text = "YOU WIN"
+align = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.5
+offset_top = -45.0
+offset_right = 172.5
+offset_bottom = 45.0
+theme_override_fonts/font = SubResource( 7 )
+text = "QUIT GAME"
+flat = true
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+cell_size = Vector3( 4, 4, 4 )
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array( -65536, 0, 1441792, -65535, 0, 1441792, -65534, 0, 1441792, -65533, 0, 1441792, -65532, 0, 1441792, -65531, 0, 1441792, -65530, 0, 1441792, -65529, 0, 1, -3, 0, 655361, -2, 0, 1441792, -1, 0, 1441792, -65536, 1, 1441792, -65535, 1, 1441792, -65534, 1, 1441792, -65533, 1, 1441792, -65532, 1, 1441792, -65531, 1, 1441792, -65530, 1, 1441792, -65529, 1, 1, -3, 1, 655361, -2, 1, 1441792, -1, 1, 1441792, -65536, 2, 1441792, -65535, 2, 1441792, -65534, 2, 1441792, -65533, 2, 1441792, -65532, 2, 1441792, -65531, 2, 1441792, -65530, 2, 1441792, -65529, 2, 1, -3, 2, 655361, -2, 2, 1441792, -1, 2, 1441792, -65536, 3, 1441792, -65535, 3, 1441792, -65534, 3, 1441792, -65533, 3, 1441792, -65532, 3, 1441792, -65531, 3, 1441792, -65530, 3, 1441792, -65529, 3, 1, -3, 3, 655361, -2, 3, 1441792, -1, 3, 1441792, -65536, 4, 1441792, -65535, 4, 1441792, -65534, 4, 1441792, -65533, 4, 1441792, -65532, 4, 1441792, -65531, 4, 1441792, -65530, 4, 1441792, -65529, 4, 1, -3, 4, 655361, -2, 4, 1441792, -1, 4, 1441792, -65536, 5, 1441792, -65535, 5, 1441792, -65534, 5, 1441792, -65533, 5, 1441792, -65532, 5, 1441792, -65531, 5, 1441792, -65530, 5, 1441792, -65529, 5, 1, -3, 5, 655361, -2, 5, 1441792, -1, 5, 1441792, -65536, 6, 1441793, -65535, 6, 1441793, -65534, 6, 1441793, -65533, 6, 1441793, -65532, 6, 1441793, -65531, 6, 1441793, -65530, 6, 1441793, -65529, 6, 1441794, -3, 6, 655362, -2, 6, 1441793, -1, 6, 1441793, -65536, 65533, 1048577, -65535, 65533, 1048577, -65534, 65533, 1048577, -65533, 65533, 1048577, -65532, 65533, 1048577, -65531, 65533, 1048577, -65530, 65533, 1048577, -65529, 65533, 2, -3, 65533, 1048578, -2, 65533, 1048577, -1, 65533, 1048577, -65536, 65534, 1441792, -65535, 65534, 1441792, -65534, 65534, 1441792, -65533, 65534, 1441792, -65532, 65534, 1441792, -65531, 65534, 1441792, -65530, 65534, 1441792, -65529, 65534, 1, -3, 65534, 655361, -2, 65534, 1441792, -1, 65534, 1441792, -65536, 65535, 1441792, -65535, 65535, 1441792, -65534, 65535, 1441792, -65533, 65535, 1441792, -65532, 65535, 1441792, -65531, 65535, 1441792, -65530, 65535, 1441792, -65529, 65535, 1, -3, 65535, 655361, -2, 65535, 1441792, -1, 65535, 1441792 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, 0 )
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 6 )
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( -4.37114e-08, -0.965926, 0.258819, 0, 0.258819, 0.965926, -1, 4.2222e-08, -1.13133e-08, 24.1691, 8.50988, -9.73745 )
+light_indirect_energy = 0.0
+shadow_enabled = true
+shadow_bias = 1.088
+
+[node name="BALLS" type="Node" parent="."]
+
+[node name="Spatial169" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 5.38046, 16.1232, 23.9119 )
+
+[node name="Spatial170" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -6.06864, 16.1232, 23.9119 )
+
+[node name="Spatial171" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.16302, 16.1232, 23.9119 )
+
+[node name="Spatial172" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 0.44352, 16.1232, 23.9119 )
+
+[node name="Spatial173" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 0.44352, 16.5397, 27.4399 )
+
+[node name="Spatial174" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -1.09132, 14.0458, 6.31869 )
+
+[node name="Spatial175" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 6.16459, 16.1232, 23.9119 )
+
+[node name="Spatial176" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 6.16459, 16.1232, 23.9119 )
+
+[node name="Spatial177" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 0, 25.6805, 0.103353 )
+
+[node name="Spatial178" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.656, 25.6805, 0.103353 )
+
+[node name="Spatial179" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 14.656, 26.6905, 8.65716 )
+
+[node name="Spatial180" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, 8.65716 )
+
+[node name="Spatial181" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, 8.65716 )
+
+[node name="Spatial182" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, 8.65716 )
+
+[node name="Spatial183" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -0.99995, 26.6905, 8.65716 )
+
+[node name="Spatial184" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 5.23549, 26.6905, 8.65716 )
+
+[node name="Spatial185" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 5.23549, 27.3868, 14.5544 )
+
+[node name="Spatial186" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -1.91335, 27.3868, 14.5544 )
+
+[node name="Spatial187" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.50874, 25.2173, -3.8196 )
+
+[node name="Spatial188" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 4.52077, 27.9043, 18.9376 )
+
+[node name="Spatial189" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 4.37878, 27.9043, 18.9376 )
+
+[node name="Spatial190" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 6.3277, 28.3216, 22.4716 )
+
+[node name="Spatial191" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 5.38046, 28.3216, 22.4716 )
+
+[node name="Spatial192" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -6.06864, 28.3216, 22.4716 )
+
+[node name="Spatial193" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, -3.16302, 28.3216, 22.4716 )
+
+[node name="Spatial194" parent="BALLS" instance=ExtResource( 3 )]
+transform = Transform3D( 1, 0, 0, 0, 0.993101, 0.11726, 0, -0.11726, 0.993101, 0.44352, 28.3216, 22.4716 )
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D( -0.0871559, 0.257834, -0.96225, 0, 0.965926, 0.258819, 0.996195, 0.0225576, -0.0841861, -29.7328, 16.0254, -1.3567 )
+current = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[connection signal="button_down" from="CanvasLayer/Button" to="." method="_on_Button_button_down"]
